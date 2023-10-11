@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:contentPadding="5dp"
+    tools:ignore="TextSizeCheck">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/pdfRl"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:background="@color/gray01">
+
+            <!--pdf view-->
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdfView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--progressbar-->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <!--book title-->
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="The Book Title"
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
+
+        <!--book description-->
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTv"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:padding="5dp"
+            android:text="The Book Description"
+            android:textSize="15sp" />
+
+        <!--category-->
+        <TextView
+            android:id="@+id/categoryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:maxLines="1"
+            android:text="Category"
+            android:textSize="10sp"
+            tools:ignore="TextSizeCheck" />
+
+        <!--mb-->
+        <TextView
+            android:id="@+id/sizeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/pdfRl"
+            android:maxLines="1"
+            android:text="13MB"
+            android:textSize="10sp"
+            tools:ignore="TextSizeCheck" />
+
+        <!--date-->
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/categoryTv"
+            android:layout_toEndOf="@id/sizeTv"
+            android:maxLines="1"
+            android:text="dd/MM/yyyy"
+            android:textSize="10sp"
+            android:textAlignment="center"/>
+
+        <!--show more options-->
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="more"
+            android:padding="4dp"
+            android:src="@drawable/more"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

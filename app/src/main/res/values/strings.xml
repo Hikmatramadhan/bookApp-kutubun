@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Book App</string>
+    <string name="new_user_signup">New User?<b>Signup</b></string>
+    <string name="Name">name</string>
+    <string name="Password">Password</string>
+    <string name="Register">register</string>
+    <string name="Confirm_Password">confirm password</string>
+    <string name="Create_New_Account">Create New Account</string>
+    <string name="Email">Email</string>
+    <string name="login">login</string>
+    <string name="masuk_tanpa_login">masuk tanpa login</string>
+    <string name="book_app">Book App</string>
+    <string name="splash">splash</string>
+    <string name="email">Email</string>
+    <string name="lupa_password">lupa password?</string>
+    <string name="login2">Login</string>
+    <string name="password">Password</string>
+    <string name="logo">logo</string>
+    <string name="kembali">kembali</string>
+    <string name="abc_example_com">abc@example.com</string>
+    <string name="dashboard_user">Dashboard User</string>
+    <string name="kembali02">kembali</string>
+    <string name="abc_example_com02">abc@example.com</string>
+    <string name="dashboard_user02">Dashboard User</string>
+    <string name="dashboard_admin">dashboard_admin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
